@@ -1,4 +1,5 @@
 <div class="row">
+
   <div class="col-md-12">
     <div class="alert alert-info">Welcome to {{nm}}</div>    
     <div class="alert alert-info">Welcome to {{nm.toUpperCase()}}</div>
@@ -40,6 +41,28 @@
  <div class="row">
    <div class="col-md-4">
      <app-mx-crd [crd]="crd"></app-mx-crd>
-
    </div>
- </div>
+ <div class="col-md-4">
+  <app-mx-crd [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-devices.svg', ttl :'Devices', msg :'Traccar supports more protocols and device models than any other GPS tracking system on the market. You can select GPS trackers from a variety of vendors from low cost Chinese models to high-end quality brands.'}" (crdEv)="onCardClick($event)"></app-mx-crd>
+</div>
+
+<div class="col-md-4">
+  <app-mx-crd [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-mobile.svg', ttl :'Interface', msg :'Traccar includes a modern fully-featured web interface with both desktop and mobile-friendly layouts. We also provide native mobile apps for Android and iOS platforms. In addition to that we have a set of apps enabling mobile devices to be used as GPS trackers.'}" (crdEv)="onCardClick($event)"></app-mx-crd>
+</div>
+
+<div class="col-md-4">
+  <app-mx-crd [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-live.svg', ttl :'Live Tracking', msg :'With Traccar you can view your GPS devices in real-time with no delay. We have various mapping options, including road maps and satellite imagery. The Server can handle a wide variety of sensors and additional information supplied by GPS units.'}" (crdEv)="onCardClick($event)"></app-mx-crd>
+</div>
+
+<div class="col-md-4">
+  <app-mx-crd [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-alerts.svg', ttl :'Alert', msg :'Traccar software provides instant web notifications along with support for email and SMS. This allows for external alerting in cases of harsh driving behaviour like speeding, fuel and maintenance events, geo-fencing and many other types of alerts.'}" (crdEv)="onCardClick($event)"></app-mx-crd>
+</div>
+
+<div class="col-md-4">
+  <app-mx-crd [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-reports.svg', ttl :'Reports', msg :'Traccar supports simple location history, trip, chart and summary reports. You can view data directly in the web or mobile app and also export and download an Excel file. History can also be projected on the map providing visual representation.'}" (crdEv)="onCardClick($event)"></app-mx-crd>
+</div>
+</div>
+
+
+
+
