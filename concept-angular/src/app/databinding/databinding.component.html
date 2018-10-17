@@ -1,3 +1,39 @@
-<p>
-  databinding works!
-</p>
+<div class="row">
+  <div class="col-md-12">
+    <div class="alert alert-info">Welcome to {{nm}}</div>    
+    <div class="alert alert-info">Welcome to {{nm.toUpperCase()}}</div>
+    <div class="alert alert-info">Welcome to {{amt*5}}</div>  
+    <input type="{{typ}}" class="{{cls}}" value="Login">
+  </div>
+</div>
+<br>
+<div class="row">
+  <div class="col-md-12">
+    <input [type]="'button'"  [class]='cls' [value]='nm'>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <div [class.jumbotron]="true"> Welcome to codekul Angular 6 training</div>
+    <div [style.border]="'1px solid red'"> Welcome to codekul Angular 6 training</div>
+    <div [attr.my]="hello">Welcome to Angular 6 training</div>
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="button" class="btn btn-success" value="clickMe" (click)="clickMe($event)">
+  </div>
+</div>
+<div class="row">
+  <div class="col-md-12">
+    <input type="text" [(ngModel)]=anyThing>{{anyThing}}
+  </div>
+</div>
+    
+ 
+ <div class="row">
+   <div class="col-md-12">
+    <app-bt-crd></app-bt-crd>   
+   </div>
+ </div>
+ 

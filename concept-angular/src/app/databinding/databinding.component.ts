@@ -7,8 +7,19 @@ import { Component, OnInit } from '@angular/core';
 })
 export class DatabindingComponent implements OnInit {
 
+  nm='codekul.com'
+  amt=100
+  typ="button"
+  cls='btn btn-primary'
+  anyThing:string
+
   constructor() { }
 
+  clickMe(ev:any){
+    console.log('clicked')
+    console.log(ev)
+  }
+ 
   ngOnInit() {
   }
 
