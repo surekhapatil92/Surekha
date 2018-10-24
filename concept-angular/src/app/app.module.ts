@@ -9,6 +9,9 @@ import { BtJumbComponent } from './bt-jumb/bt-jumb.component';
 import { MyAlComponent } from './bt-crd/my-al.component';
 import { DatabindingComponent } from './databinding/databinding.component';
 import { MxCrdComponent } from './mx-crd/mx-crd.component';
+import { InterComComponent } from './inter-com/inter-com.component';
+import { PrgBrComponent } from './inter-com/prg-br.component';
+import { BtnPnlComponent } from './inter-com/btn-pnl.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +21,10 @@ import { MxCrdComponent } from './mx-crd/mx-crd.component';
     BtJumbComponent,
     MyAlComponent,
     DatabindingComponent,
-    MxCrdComponent
+    MxCrdComponent,
+    InterComComponent,
+    PrgBrComponent,
+    BtnPnlComponent
   ],
   imports: [
     BrowserModule,FormsModule

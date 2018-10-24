@@ -14,6 +14,7 @@ export class DatabindingComponent implements OnInit {
   cls='btn btn-primary'
   anyThing:string
   crd:Crd
+  clkCrd:string
  
 
   constructor() {
@@ -29,6 +30,9 @@ export class DatabindingComponent implements OnInit {
   }
  
   ngOnInit() {
+  }
+  onCardClick(crd:Crd){
+
   }
 
 }

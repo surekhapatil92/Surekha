@@ -3,7 +3,8 @@
   <div class="col-md-12">
     <div class="alert alert-info">Welcome to {{nm}}</div>    
     <div class="alert alert-info">Welcome to {{nm.toUpperCase()}}</div>
-    <div class="alert alert-info">Welcome to {{amt*5}}</div>  
+    <div class="alert alert-info">Welcome to {{amt*5}}</div> 
+    <div class="alert alert-info">Clicked card is{{clkCrd}}</div> 
     <input type="{{typ}}" class="{{cls}}" value="Login">
   </div>
 </div>
@@ -40,7 +41,7 @@
  
  <div class="row">
    <div class="col-md-4">
-     <app-mx-crd [crd]="crd"></app-mx-crd>
+     <app-mx-crd [crd]="crd" (crdEV)="onCardClick()"></app-mx-crd>
    </div>
  <div class="col-md-4">
   <app-mx-crd [crd]="{imgUrl :'https://www.traccar.org/images/server/feature-devices.svg', ttl :'Devices', msg :'Traccar supports more protocols and device models than any other GPS tracking system on the market. You can select GPS trackers from a variety of vendors from low cost Chinese models to high-end quality brands.'}" (crdEv)="onCardClick($event)"></app-mx-crd>

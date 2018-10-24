@@ -14,5 +14,9 @@ export class MxCrdComponent implements OnInit {
 
   ngOnInit() {
   }
+  goSm(crd:Crd){
+    console.log(`Title is ${crd.ttl}`)
+
+  }
 
 }
